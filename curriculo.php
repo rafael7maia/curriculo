@@ -1,7 +1,7 @@
 <?php
 $nome = 'Rafael Maia';
 $profissao = 'Manager, Consultant, Developer and Design';
-$especialidade = 'Management, Security, PHP, Javascrip, CSS, HTML5';
+$especialidade = 'Management, Security, BPM, PHP, Javascrip, CSS, HTML5';
 
 $contato = ['Email' => 'mailto:rafael7maia@gmail.com',
     'Twitter' => 'http://twitter.com/rafael7maia',
@@ -17,14 +17,14 @@ $formacao = [['inicio' => 2007,
         'instituicao' => 'Faculdade de Tecnologia do Nordeste',
         'ocupacao' => 'Gerência de Redes de Computadores']];
 
-$experiencia = [['inicio' => 2013,
+$experiencia = [['inicio' => 2016,
     'termino' => FALSE,
-    'instituicao' => 'Rodada Hacker',
-    'ocupacao' => 'Hacker'],
-    ['inicio' => '2013',
+    'instituicao' => 'Brazilian Army',
+    'ocupacao' => 'IT Infraestruture Manager'],
+    ['inicio' => '2016',
         'termino' => FALSE,
-        'instituicao' => 'Quequere Jogos',
-        'ocupacao' => 'Designer de Jogos']];
+        'instituicao' => 'Faculdades Cearenses',
+        'ocupacao' => 'Professor']];
 
 $portfolio = [['titulo' => 'Sucesu Ceará',
     'url' => 'http://www.sucesuce.org.br',
@@ -90,7 +90,7 @@ $profhabil = ['html' => 60, 'css' => 50, 'javascript' => 60, 'php' => 50];?>
 										<?=$item['ano'] ?>
 										<?php if (!empty($item['url'])): ?>
 										&mdash;
-										<a href="<?= $item['url'] ?>">Ver site</a>
+										<a href="<?= $item['url'] ?>" target="_blank">Ver site</a>
 										<?php endif; ?>
 								</small>
 							</h3>
