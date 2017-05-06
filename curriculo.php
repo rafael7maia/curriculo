@@ -79,24 +79,23 @@ $profhabil = ['html' => 60, 'css' => 50, 'javascript' => 60, 'php' => 50];?>
 						<h2>Portfolio</h2>
 						  <?php foreach ($portfolio as $item): ?>
 							<div class="media clearfix">
-						  <?php if (!empty($item['foto'])): ?>
-						  <figure class="pull-left">
-							<img class="media-object" src="<?= $item['foto'] ?>" />
-						  </figure>
-						  <?php endif; ?>
-						  <div class="media-body">
-							<h3><?= $item['titulo'] ?>
-								<small>
-										<?=$item['ano'] ?>
-										<?php if (!empty($item['url'])): ?>
-										&mdash;
-										<a href="<?= $item['url'] ?>" target="_blank">Ver site</a>
-										<?php endif; ?>
-								</small>
-							</h3>
-						  </div> <!--media-body-->
-									
-						  </div> <!-- /media-->
+							  <?php if (!empty($item['foto'])): ?>
+								  <figure class="pull-left">
+									<img class="media-object" src="<?= $item['foto'] ?>" />
+								  </figure>
+							  <?php endif; ?>
+							  <div class="media-body">
+								<h3><?= $item['titulo'] ?>
+									<small>
+											<?=$item['ano'] ?>
+											<?php if (!empty($item['url'])): ?>
+											&mdash;
+											<a href="<?= $item['url'] ?>" target="_blank">Ver site</a>
+											<?php endif; ?>
+									</small>
+								</h3>
+							  </div> <!--media-body-->
+							</div> <!-- /media-->
 							<?php endforeach; ?>
 				</div><!-- /col-->	
 				<div class="col-sm-6 col-md-4">
